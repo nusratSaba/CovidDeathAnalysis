@@ -1,2 +1,2 @@
 # CovidDeathAnalysis
-Data analysis and visualization with pandas and streamlit
+Visualization on Covid Death Analysis and deploying in Streamlit
