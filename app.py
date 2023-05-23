@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import folium 
+# import folium 
 
 st.title('Covid Death Data Analysis')
 
@@ -47,7 +47,11 @@ with tab2:
 
 with tab3:
 	st.header("Location")
-	m = folium.Map()
+	df_map = pd.read_csv("./data/dataset.csv" , usecols=['Lat', 'Long'])
+	df_map.rename(columns = {'Lat':'LAT'}, inplace = True)
+	df_map.rename(columns = {'Long':'LON'}, inplace = True)
+	st.map(df_map)
+
 
 
 
