@@ -43,6 +43,10 @@ with tab2:
 
 	st.caption('Histogram')
 	st.caption('Scatterplot')
+	# st.markdown(""" <style> .font {
+	# 	font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;} 
+	# 	</style> """, unsafe_allow_html=True)
+	# st.markdown('<p class="font">Guess the object Names</p>', unsafe_allow_html=True)
 
 
 with tab3:
